@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio page built with pure HTML">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <!-- ===================== Header + Navigation ===================== -->
+    <header>
+        <span>Ahmed Portfolio</span>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#courses">Courses</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- ===================== Hero / About Section ===================== -->
+        <section id="about">
+            <h1>Hi, I'm Ahmed</h1>
+            <p>
+                I'm a beginner front-end developer learning how to build clean and
+                organized web pages using semantic HTML. I love turning simple
+                ideas into structured, readable code.
+            </p>
+            <img src="profile.jpg" alt="Photo of Ahmed smiling at his desk">
+        </section>
+
+        <hr>
+
+        <!-- ===================== Skills Section ===================== -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <p>Here are the tools and languages I currently work with:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript (basics)</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+
+            <p>My learning journey so far, step by step:</p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <p>
+                <strong>HTML</strong> is the skill I feel most confident in.
+                <em>CSS</em> is what I'm currently practicing, and my
+                <mark>next goal</mark> is to get comfortable with JavaScript.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ===================== Courses Table ===================== -->
+        <section id="courses">
+            <h2>My Courses</h2>
+
+            <table>
+                <caption>Courses I have taken or I'm taking</caption>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Fundamentals</td>
+                        <td>2 weeks</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Fundamentals</td>
+                        <td>3 weeks</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Basics</td>
+                        <td colspan="2">Not started yet</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Courses</td>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ===================== Gallery Section ===================== -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+
+            <figure>
+                <img src="gallery1.jpg" alt="Screenshot of my first HTML project">
+                <figcaption>My first HTML project</figcaption>
+            </figure>
+
+            <figure>
+                <img src="gallery2.jpg" alt="Screenshot of a table layout I built">
+                <figcaption>Practicing tables</figcaption>
+            </figure>
+
+            <figure>
+                <img src="gallery3.jpg" alt="Screenshot of a contact form I built">
+                <figcaption>Practicing forms</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- ===================== Contact Form Section ===================== -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx">
+                <br><br>
+
+                <label for="birthdate">Date of Birth:</label><br>
+                <input type="date" id="birthdate" name="birthdate">
+                <br><br>
+
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">General Question</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <br><br>
+
+                <span>Preferred Contact Method:</span><br>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="contact-email">Email</label>
+
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+                <br><br>
+
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">I agree to the terms and conditions</label>
+                <br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here..."></textarea>
+                <br><br>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ===================== FAQ Section ===================== -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What technologies do you use?</summary>
+                <p>Currently just HTML, but I'm learning CSS and JavaScript too.</p>
+            </details>
+
+            <details>
+                <summary>Are you available for freelance work?</summary>
+                <p>Yes, feel free to reach out through the contact form above.</p>
+            </details>
+
+            <details>
+                <summary>Where are you based?</summary>
+                <p>I'm based in Egypt.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ===================== Footer ===================== -->
+    <footer>
+        <address>
+            Email: ahmed@example.com<br>
+            Location: Cairo, Egypt
+        </address>
+
+        <p>&copy; 2026 Ahmed's Portfolio. All rights reserved.</p>
+
+        <p>
+            <a href="https://github.com" target="_blank">GitHub</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> &nbsp;|&nbsp;
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
